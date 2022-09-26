@@ -1,16 +1,34 @@
-import socket
 
-HOST = '127.0.0.1'
+import argparse
+import logging
+import traceback
+import sys
 
-PORT = 50000
+import redis
+sys.path.append('..')
+import redisrpc
+
+class Cliente:
+
+    def __init__(self, Id):
+        self.Id = Id
+
+    def sendMessage(self,remoteId, msg, server):
+        
+        
+    def checkMessage(self,server):
+ 
+ 
+    def connect(self, serv):
+        self.srv = serv
+
+    def desconnect(self):
+        self.srv = None
 
 
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    
+def Main():
 
-s.connect((HOST , PORT)) #! passando o host e a porta para conectar no servidor
+    
 
-s.sendall(str.encode('Bom dia Tropa!')) #! comando para enviar dados pro servidor
-
-data = s.recv(1024)
-
-print('Mensagem recebida porra:', data.decode())
+Main()
