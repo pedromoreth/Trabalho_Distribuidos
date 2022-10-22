@@ -40,15 +40,15 @@ def Main():
     src = Server()
     cli1 = Cliente("Jose")
     cli1.connect(src)
-    cli2 = Cliente("Maria")
+    cli2 = Cliente("Mariana")
     cli2.connect(src)
     cli3 = Cliente("Pedro")
     cli3.connect(src)
     
     
-    cli1.sendMessage("Maria","teste1")
-    cli1.sendMessage("Maria","teste2")
-    cli1.sendMessage("Maria","teste3")
+    cli1.sendMessage("Mariana","teste1")
+    cli1.sendMessage("Mariana","teste2")
+    cli1.sendMessage("Mariana","teste3")
 
     cli2.checkMessage()
     cli3.checkMessage()
